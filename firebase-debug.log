@@ -1,0 +1,35 @@
+[debug] [2018-03-04T10:29:08.895Z] ----------------------------------------------------------------------
+[debug] [2018-03-04T10:29:08.911Z] Command:       E:\Program Files\nodejs\node.exe C:\Users\mocza\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-03-04T10:29:08.911Z] CLI Version:   3.17.4
+[debug] [2018-03-04T10:29:08.911Z] Platform:      win32
+[debug] [2018-03-04T10:29:08.911Z] Node Version:  v8.9.4
+[debug] [2018-03-04T10:29:08.911Z] Time:          Sun Mar 04 2018 11:29:08 GMT+0100 (Środkowoeuropejski czas stand.)
+[debug] [2018-03-04T10:29:08.911Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-04T10:29:08.911Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-04T10:29:08.926Z] > authorizing via signed-in user
+[debug] [2018-03-04T10:29:08.926Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-04T10:29:08.926Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/uqyOuegIALAvaNnBP6PjDFXgCQkGmVgfdPNV4li-tOE',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Mar 04 2018 11:29:08 GMT+0100 (Środkowoeuropejski czas stand.)
+[debug] [2018-03-04T10:29:09.309Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-04T10:29:09.360Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/gm-ofmcap  
+  
+ Sun Mar 04 2018 11:29:09 GMT+0100 (Środkowoeuropejski czas stand.)
+[debug] [2018-03-04T10:29:10.600Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-04T10:29:10.600Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/gm-ofmcap/tokens  
+  
+ Sun Mar 04 2018 11:29:10 GMT+0100 (Środkowoeuropejski czas stand.)
+[debug] [2018-03-04T10:29:11.777Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'gm-ofmcap'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-03-04T10:29:13.204Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/gm-ofmcap/uploads/-L6kYi7vfoPNTOTSN00h?fileCount=16&message=  
+  
+ Sun Mar 04 2018 11:29:13 GMT+0100 (Środkowoeuropejski czas stand.)
