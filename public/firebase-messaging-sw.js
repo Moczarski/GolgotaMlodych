@@ -20,5 +20,5 @@ importScripts("https://www.gstatic.com/firebasejs/4.10.1/firebase-messaging.js")
 		const options = {
 			body: payload.data.status
 		};
-		return self.registration.shhowNotification(title, options);
+		return self.registration.showNotification(title, options);
 	)};
