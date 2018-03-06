@@ -8,7 +8,7 @@ admin.initializeApp({
 });
 
 // This registration token comes from the client FCM SDKs.
-var registrationToken = 'diqUxV5W5Rw:APA91bFGZ6XWig9GgUtN6o1TsZaM3jVU67F_n6AJ7Z2d_nlWKcTNziuhVq2NoVeTy0UwnajRjbGTN5pTG8Xb86CD6uJaBfsqJhTsNmTeg_Ypl4Fwk6r4RLFmRSqQr1mr2VT360IWm5jM';
+var registrationToken = 'fOWLxzD_9sg:APA91bGuw9WkUxRhPCkVYsmHj0l6vaao5Ij8A7q0XKMsjV4mebmbGc4VVvE9GGLub_e0jbBmEKJINGl0fdVehXm_YpX5cwliA9I1ehYJOxSqoVnB7FJaJXyG4wLbBtGXaQjfephwVH3n';
 
 // See documentation on defining a message payload.
 var message = {
