@@ -4,16 +4,16 @@
 	
         <meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Aplikacja Golgoty Młodych</title>
+        <title>Golgoty Młodych</title>
 		<link rel="stylesheet" type="text/css" href="css.css" />
 		<link rel="shortcut icon" type="image/png" href="icon.png">
+		<link rel="manifest" href="manifest.json">
 		
     </head>
     <body>
 	
 		<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 		<script>
-		
 			// Initialize Firebase
 			  var config = {
 				apiKey: "AIzaSyCcgLN_cvLBeogH99FkLtfbgnWcNZflUD0",
@@ -54,9 +54,11 @@
 				<a href="niezbednik.html"><button>NIEZBĘDNIK</button></a><br />
 				<a href="plan.html"><button>PLAN</button></a>
 				<a href="modlitewnik.html"><button>MODLITEWNIK</button></a><br />
-				<a href="info.html"><button class="but2" >INFORMACJE</button></a><br />
+				<a href="menu.html"><button>JADŁOSPIS</button></a>
+				<a href="info.html"><button>INFORMACJE</button></a><br />
+				<a href="pogoda.html"><button>POGODA</button></a><br />
 				
-				<button class="but2" onclick="window.open('http://www.golgotamlodych.pl/', '_system');">NASZA STRONA</button><br /><hr />
+				<hr /><button class="but2" style="background-color: white; color: black; margin-top: 10%;" onclick="window.open('http://www.golgotamlodych.pl/', '_system');">NASZA STRONA</button><br />
 				
 				<a onclick="window.open('https://www.facebook.com/golgotamlodychpl/', '_system');"><img class="comm" src="facebook.png" /></a>
 				<a onclick="window.open('https://www.instagram.com/golgota_mlodych/', '_system');"><img class="comm" src="instagram.png" /></a>
