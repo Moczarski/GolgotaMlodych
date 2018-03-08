@@ -1,13 +1,15 @@
 {
-  "name": "Golgota Młodych",
-  "icons": [
-    {
-      "src": "icon.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
-  ],
-  "start_url": "/index.html",
-  "display": "fullscreen",
-  "orientation": "portrait"
+	"gcm_sender_id": "482941778795",
+	"gcm_sender_id_comment": "Nie zmieniaj GCM Sender ID"
+	"name": "Golgota Młodych",
+	"icons": [
+		{
+		"src": "icon.png",
+		"sizes": "192x192",
+		"type": "image/png"
+		}
+	],
+	"start_url": "/index.html",
+	"display": "fullscreen",
+	"orientation": "portrait"
 }
