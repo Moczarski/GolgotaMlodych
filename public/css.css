@@ -1,8 +1,21 @@
+html {
+	height: 100%;
+}
+
 body {
-	margin: 0 0;
 	background-image: url('back.png');
 	font-family: 'Arial';
 	overflow-y: scroll;
+	height: 100%;
+	padding: 2%;
+}
+
+.flex {
+	height: inherit;
+	width: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .przejscie {
@@ -19,8 +32,9 @@ body {
 
 div {
 	text-align: center;
-	padding: 5%;
+	margin: auto;
 	z-index: 0;
+	width: 100%;
 }
 
 li {
@@ -95,7 +109,7 @@ button {
 img {
 	height: 25%;
 	width: 85%;
-	margin: 0 auto 10%;
+	margin: 0 auto 10% auto;
 	display: block;
 }
 
@@ -106,41 +120,41 @@ img {
 }
 
 .niezbednik {
-	width: 95%;
-	margin: 0 auto;
+	width: 99%;
+	margin: auto;
 	display: block;
 }
 
 #tlo {
 	background-color: white;
-	width: 90%;
+	width: 98%;
 	animation-name: tlo;
 	animation-duration: 1s;
 	position: relative;
-	margin: 2% 2%;
+	margin: auto;
 	border: none;
-	padding: 3% 3%;
+	padding: 2% 2%;
 	font-size: 120%;
 }
 
 #tlo2 {
 	background-color: white;
-	width: 90%;
+	width: 98%;
 	animation-name: tlo2;
 	animation-duration: 1s;
 	position: relative;
-	margin: 2% 2%;
+	margin: 1% auto;
 	border: none;
-	padding: 3% 3%;
+	padding: 2% 2%;
 	font-size: 120%;
 }
 
 #fb {
-	width: 95%;
+	width: 98%;
 	animation-name: tlo;
 	animation-duration: 1s;
 	position: relative;
-	margin: 1% 1%;
+	margin: auto;
 	border: none;
 	padding: 1% 1%;
 }
