@@ -6,7 +6,7 @@ html {
 
 body {
 	background-image: url('back.png');
-	font-family: 'Arial';
+	font-family: Tahoma;
 	overflow-y: scroll;
 	height: 100vh;
 	padding: 0;
@@ -56,10 +56,10 @@ button {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 6vw;
+	font-size: 5vw;
 	margin: 1%;
-	font-family: 'Impact';
-	width: 45%;
+	font-family: Tahoma;
+	width: 44%;
 	outline: 0;
 }
 
@@ -70,8 +70,8 @@ button {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 6vw;
-	font-family: 'Impact';
+	font-size: 5vw;
+	font-family: Tahoma;
 	width: 75%;
 	outline: 0;
 }
@@ -84,7 +84,7 @@ button {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 5vw;
-	font-family: 'Impact';
+	font-family: Tahoma;
 	width: 75%;
 	animation-name: but2a;
 	animation-duration: 1s;
@@ -100,7 +100,7 @@ button {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 5vw;
-	font-family: 'Impact';
+	font-family: Tahoma;
 	width: 75%;
 	animation-name: but2b;
 	animation-duration: 1s;
@@ -112,7 +112,7 @@ button {
 img {
 	height: 25%;
 	width: 85%;
-	margin: 5% auto 5% auto;
+	margin: 5% auto 2% auto;
 	display: block;
 }
 
@@ -137,7 +137,7 @@ img {
 	margin: 1% auto;
 	border: none;
 	padding: 2% 2%;
-	font-size: 120%;
+	font-size: 4vw;
 }
 
 #tlo2 {
@@ -149,7 +149,7 @@ img {
 	margin: 1% auto;
 	border: none;
 	padding: 2% 2%;
-	font-size: 120%;
+	font-size: 4vw;
 }
 
 #fb {
