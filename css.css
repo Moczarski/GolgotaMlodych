@@ -5,7 +5,8 @@ html {
 }
 
 body {
-	background-image: url('back.png');
+	background-image: url('img/back.png');
+	background-size: 100vh;
 	font-family: Tahoma;
 	overflow-y: scroll;
 	height: 100vh;
@@ -25,7 +26,8 @@ body {
 	width: inherit;
 	height: inherit;
 	z-index: 0;
-	background-image: url('back.png');
+	background-image: url('img/back.png');
+	background-size: 100vh;
 	animation-name: przejscie;
 	animation-duration: 2s;
 	position: absolute;
@@ -40,8 +42,12 @@ div {
 	width: 100%;
 }
 
+hr {
+	color: #d5c7aa;
+}
+
 li {
-	color: #a5be29;
+	color: #3d6e8e;
 }
 
 ul {
@@ -49,9 +55,8 @@ ul {
 }
 
 button {
-	background-color: #009900;
+	background-color: #d5c7aa;
 	border: none;
-	color: white;
 	padding: 4%;
 	text-align: center;
 	text-decoration: none;
@@ -64,9 +69,8 @@ button {
 }
 
 .but2 {
-	background-color: #009900;
+	background-color: #d5c7aa;
 	border: none;
-	color: white;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -78,9 +82,8 @@ button {
 }
 
 .but2a {
-	background-color: #009900;
+	background-color: #d5c7aa;
 	border: none;
-	color: white;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -94,9 +97,8 @@ button {
 }
 
 .but2b {
-	background-color: #009900;
+	background-color: #d5c7aa;
 	border: none;
-	color: white;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -189,9 +191,9 @@ img {
 }
 
 .title1 {
-	color: #f5a023;
+	color: #ba742e;
 }
 
 .textGreen {
-	color: #a5be29;
+	color: #ba2b1b;
 }

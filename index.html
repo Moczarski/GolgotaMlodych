@@ -4,18 +4,250 @@
 	
         <meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		
         <title>Golgoty Młodych</title>
+		
 		<link rel="stylesheet" type="text/css" href="css.css" />
-		<link rel="shortcut icon" type="image/png" href="icon.png" />
+		<link rel="shortcut icon" type="image/png" href="img/icon.png" />
 		<link rel="manifest" href="/manifest.json" />
+		
+		<img src="img/back.png" style="display: none;"/>
+		
 		<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 		<script>
-		  var OneSignal = window.OneSignal || [];
-		  OneSignal.push(function() {
-			OneSignal.init({
-			  appId: "29944979-08db-4df8-b866-c5e65200fac9",
-			});
-		  });
+		
+			var OneSignal = window.OneSignal || [];
+			  OneSignal.push(function() {
+				OneSignal.init({
+				  appId: "29944979-08db-4df8-b866-c5e65200fac9",
+				});
+			  });
+
+			function weather(){
+				!function(d,s,id){
+					var js,fjs=d.getElementsByTagName(s)[0];
+						if(!d.getElementById(id)){
+							js=d.createElement(s);
+							js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+							fjs.parentNode.insertBefore(js,fjs);
+						}
+				}(document,'script','weatherwidget-io-js');
+			}
+			
+			function fb() {
+				(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = 'https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.12';
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			}
+			
+			function wroc(){
+				const glowna =
+				
+				'<img src="img/logo4.png" /><br /><hr />'+
+				
+				'<button onclick="aktualnosci();" style="width: 92%;">AKTUALNOŚCI</button><br />'+
+				'<button onclick="pogoda();">POGODA</button>'+
+				'<button onclick="plan();">PLAN</button></a><br />'+
+				'<button onclick="info();">INFORMACJE</button>'+
+				'<button onclick="modlitewnik();">MODLITEWNIK</button><br />'+
+				'<button onclick="niezbednik();">NIEZBĘDNIK</button>'+
+				'<button onclick="menu();">JADŁOSPIS</button>'+
+				
+				'<hr /><button class="but2" style="background-color: #d5c7aa;" onclick="window.open(\'http://www.golgotamlodych.pl/\');">NASZA STRONA</button><br />'+
+				'<a onclick="window.open(\'https://www.facebook.com/golgotamlodychpl/\');"><img class="comm" src="img/facebook.png" /></a>'+
+				'<a onclick="window.open(\'https://www.instagram.com/golgota_mlodych/\');"><img class="comm" src="img/instagram.png" /></a>'+
+				'<a onclick="window.open(\'https://www.youtube.com/user/GolgotaMlodych/\');"><img class="comm" src="img/youtube.png" /></a>';
+				
+				document.getElementById('main').innerHTML = glowna;
+			}
+			
+			function aktualnosci() {			
+				var aktualnosci =
+				'<div id="fb-root"></div>'+
+				'<div id="fb">'+
+					'<div class="fb-page" data-href="https://www.facebook.com/golgotamlodychpl" data-tabs="timeline, events, messages" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/golgotamlodychpl" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/golgotamlodychpl">Golgota Młodych</a></blockquote></div>'+
+				'</div><hr />'+
+				
+				'<button class="but2" onclick="wroc();">WRÓĆ</button>';
+				
+				document.getElementById('main').innerHTML = aktualnosci;
+				
+				fb();
+			}
+			
+			function info(){
+				const info =
+				
+				'<div id="tlo">'+
+					'<span class="title1">PO CO?</span><br />'+
+					'Każdy z nas doświadcza w swoim życiu krzyża. '+
+					'W Ewangelii Jezus zachęca, żeby ten krzyż brać na siebie i iść za Nim. '+
+					'Ale strach przed nim często nas paraliżuje. <span class="textGreen">Golgota Młodych</span> w tym kontekście staje się miejscem odkrywania <span class="textGreen">krzyża</span>  chwalebnego, '+
+					'a więc takiego, <span class="textGreen">który daje mi życie</span>, a nie przygniata do ziemi, odbierając wszelką nadzieję.'+
+				'</div>'+
+				
+				'<div id="tlo2">'+
+					'<span class="title1">KIEDY I GDZIE?</span><br />'+
+					'Tegoroczna Golgota Młodych odbywa się w dniach <span class="textGreen">24-28 sierpnia 2017 roku.</span>  '+
+					'Hasłem przewodnim będzie <span class="textGreen">„ZŁOTY CIELEC"</span> , tradycyjnie w Serpelicach nad Bugiem.'+
+					'Złoty Cielec to biblijny symbol tego wszystkiego, co w naszym życiu zajmuje miejsce żywego i prawdziwego Boga. '+
+					'Na GM będziemy szukać prawdy o naszym sercu. I wybierać, za czym chcemy iść.'+
+				'</div>'+
+				
+				'<div id="tlo">'+
+					'<span class="title1">DLA KOGO?</span><br />'+
+					'Na Golgotę Młodych <span class="textGreen">zapraszamy każdego, kto chce podjąć konkretne duchowe zmaganie o swoje życie wieczne.</span> '+
+					'Dolna granica wieku na GM to ukończone gimnazjum. Średnia wieku uczestników to ponad 20 lat. '+
+					'Górnej granicy wieku nie ma – jeśli dobrze się czujesz wśród młodych ludzi i nie przeszkadzają ci pielgrzymkowe warunki, zapraszamy!'+
+				'</div><hr />'+
+				
+				'<button class="but2" onclick="wroc();">WRÓĆ</button>';
+				
+				document.getElementById('main').innerHTML = info;
+			}
+			
+			function plan(){
+				const plan =
+				'<div id="tlo">'+
+				
+					'<ul>'+
+						'<li class="title1">24.08 :: POCZĄTEK'+
+							'<ul>'+
+								'<li>19:30 – Nabożeństwo Otwarcia</li>'+
+							'</ul>'+
+						'</li>'+
+
+						'<br /><li class="title1">25.08 :: DZIEŃ I'+
+							'<ul>'+
+								'<li>9:30 – Konferencja</li>'+
+
+								'<li>11:30 – Eucharystia</li>'+
+
+								'<li>15:00 – TOMASZ BUDZYŃSKI</li>'+
+
+								'<li>20:00 – Nabożeństwo Wieczorne</li>'+
+							'</ul>'+
+						'</li>'+
+
+					'<br /><li class="title1">26.08 :: DZIEŃ II'+
+						'<ul>'+
+							'<li>9:30 – Konferencja </li>'+
+
+							'<li>11:30 – Eucharystia </li>'+
+
+							'<li>15:00 – Droga Krzyżowa </li>'+
+
+							'<li>19:30 – Nabożeństwo Pokutne </li>'+
+						'</ul>'+
+					'</li>'+
+
+					'<br /><li class="title1">27.08 :: DZIEŃ III'+
+						'<ul>'+
+							'<li>9:30 – Konferencja </li>'+
+
+							'<li>11:00 – Eucharystia  </li>'+
+
+							'<li>15:00 – Konferencja</li>'+
+
+							'<li>19:30 – Nabożeństwo Wieczorne</li>'+
+
+							'<li>21:30 – Koncert 30+40/70</li>'+
+						'</ul>'+
+					'</li>'+
+
+					 '<br /><li class="title1">28.08 – Zakończenie'+
+						'<ul>'+
+							'<li>10:30 – Eucharystia</li>'+
+						'</ul>'+
+					'</li>'+
+				'</ul>'+
+				
+				'</div><hr />'+
+				
+				'<button class="but2" onclick="wroc();">WRÓĆ</button>';
+				
+				document.getElementById('main').innerHTML = plan;
+			}
+			
+			function pogoda(){
+				weather();
+				var pogoda =
+				'<div class="tlo">'+
+				
+					'<a class="weatherwidget-io" href="https://forecast7.com/pl/52d2823d05/serpelice/" data-label_1="SERPELICE" data-label_2="Golgota Młodych" data-icons="Climacons" data-theme="desert" data-basecolor="#d5c7aa" data-textcolor="#000000" data-highcolor="#ba2b1b" data-lowcolor="#3d6e8e" data-suncolor="#ba742e" data-raincolor="#3d6e8e" >SERPELICE Golgota Młodych</a>'+
+					
+				'</div><hr />'+
+				
+				'<button class="but2" onclick="wroc();">WRÓĆ</button>';
+				
+				document.getElementById('main').innerHTML = pogoda;
+
+				__weatherwidget_init();
+			}
+			
+			function niezbednik(){
+				const niezbednik =
+				'<div id="tlo">'+
+				'<img class="niezbednik" src="img/niezbednik.jpg" alt="NIEZBĘDNIK - błąd wczytywania obrazu" />'+
+				'</div><hr />'+
+				'<button class="but2" onclick="wroc();">WRÓĆ</button>';
+				
+				document.getElementById('main').innerHTML = niezbednik;		
+			}
+						
+			function menu(){
+				const menu =
+				'<button class="but2a" onclick="skladniki();">dzien1</button><br />'+
+				'<button class="but2b" onclick="skladniki();">dzien2</button><br />'+
+				'<button class="but2a" onclick="skladniki();">dzien3</button><br />'+
+				'<button class="but2b" onclick="skladniki();">dzien4</button><br />'+
+				'<button class="but2a" onclick="skladniki();">dzien5</button><br /><hr />'+
+				'<button class="but2" onclick="wroc();">WRÓĆ</button>';
+				
+				document.getElementById('main').innerHTML = menu;
+			}
+			
+			function modlitewnik(){
+				const modlitewnik =
+				'<button class="but2a" onclick="modlitwa();">modlitwa1</button><br />'+
+				'<button class="but2b" onclick="modlitwa();">modlitwa2</button><br />'+
+				'<button class="but2a" onclick="modlitwa();">modlitwa3</button><br />'+
+				'<button class="but2b" onclick="modlitwa();">modlitwa4</button><br />'+
+				'<button class="but2a" onclick="modlitwa();">modlitwa5</button><br />'+
+				'<button class="but2b" onclick="modlitwa();">modlitwa6</button><br />'+
+				'<button class="but2a" onclick="modlitwa();">modlitwa7</button><br />'+
+				'<button class="but2b" onclick="modlitwa();">modlitwa8</button><br /><hr />'+
+				'<button class="but2" onclick="wroc();">WRÓĆ</button>';
+				
+				document.getElementById('main').innerHTML = modlitewnik;
+			}
+			
+			function modlitwa() {
+				const modlitwa =
+				'<div id="tlo">'+
+					'Treść modlitwy...'+
+				'</div><hr />'+
+				'<button class="but" onclick="modlitewnik();">COFNIJ</button>'+
+				'<button class="but" onclick="wroc();">WRÓĆ</button>';
+				
+				document.getElementById('main').innerHTML = modlitwa;
+			}
+			
+			function skladniki() {
+				const skladniki =
+				'<div id="tlo">'+
+					'Dzisiejsze danie...'+
+				'</div><hr />'+
+				'<button class="but" onclick="menu();">COFNIJ</button>'+
+				'<button class="but" onclick="wroc();">WRÓĆ</button>';
+				
+				document.getElementById('main').innerHTML = skladniki;
+			}
+		
 		</script>
 		
     </head>
@@ -25,22 +257,22 @@
 		
 		<div class="flex">
 		
-			<div>
+			<div id="main">
 				
-				<img src="logo4.png" /><br /><hr />
-				<a href="aktualnosci.html"><button style="width: 92%;">AKTUALNOŚCI</button></a><br />
-				<a href="pogoda.html"><button>POGODA</button></a>
-				<a href="plan.html"><button>PLAN</button></a><br />
-				<a href="info.html"><button>INFORMACJE</button></a>
-				<a href="modlitewnik.html"><button>MODLITEWNIK</button></a><br />
-				<a href="niezbednik.html"><button>NIEZBĘDNIK</button></a>
-				<a href="menu.html"><button>JADŁOSPIS</button></a>
+				<img src="img/logo4.png" alt="GOLGOTA MŁODYCH - błąd logo"/><br /><hr />
+				<button onclick="aktualnosci();" style="width: 92%;">AKTUALNOŚCI</button><br />
+				<button onclick="pogoda();">POGODA</button>
+				<button onclick="plan();">PLAN</button><br />
+				<button onclick="info();">INFORMACJE</button>
+				<button onclick="modlitewnik();">MODLITEWNIK</button><br />
+				<button onclick="niezbednik();">NIEZBĘDNIK</button>
+				<button onclick="menu();">JADŁOSPIS</button></a>
 				
-				<hr /><button class="but2" style="background-color: white; color: black;" onclick="window.open('http://www.golgotamlodych.pl/');">NASZA STRONA</button><br />
+				<hr /><button class="but2" style="background-color: #d5c7aa;" onclick="window.open('http://www.golgotamlodych.pl/');">NASZA STRONA</button><br />
 				
-				<a onclick="window.open('https://www.facebook.com/golgotamlodychpl/');"><img class="comm" src="facebook.png" /></a>
-				<a onclick="window.open('https://www.instagram.com/golgota_mlodych/');"><img class="comm" src="instagram.png" /></a>
-				<a onclick="window.open('https://www.youtube.com/user/GolgotaMlodych/');"><img class="comm" src="youtube.png" /></a>
+				<a onclick="window.open('https://www.facebook.com/golgotamlodychpl/');"><img class="comm" src="img/facebook.png" /></a>
+				<a onclick="window.open('https://www.instagram.com/golgota_mlodych/');"><img class="comm" src="img/instagram.png" /></a>
+				<a onclick="window.open('https://www.youtube.com/user/GolgotaMlodych/');"><img class="comm" src="img/youtube.png" /></a>
 				
 			</div>
 			
