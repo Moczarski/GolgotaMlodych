@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	background-image: url('img/back.png');
+	background-image: ;
 	background-size: 100vh;
 	font-family: Tahoma;
 	overflow-y: scroll;
@@ -42,10 +42,6 @@ div {
 	width: 100%;
 }
 
-hr {
-	color: #d5c7aa;
-}
-
 li {
 	color: #3d6e8e;
 }
@@ -55,21 +51,27 @@ ul {
 }
 
 button {
-	background-color: #d5c7aa;
 	border: none;
 	padding: 4%;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 5vw;
-	margin: 1%;
+	margin: 2%;
 	font-family: Tahoma;
 	width: 44%;
 	outline: 0;
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 5px #64636c;
+	-moz-box-shadow: 2px 2px 5px #64636c;
+	box-shadow: 2px 2px 5px #64636c;
+	color: #ffffff;
+	background: #2c292c;
 }
 
 .but2 {
-	background-color: #d5c7aa;
 	border: none;
 	text-align: center;
 	text-decoration: none;
@@ -79,10 +81,17 @@ button {
 	width: 75%;
 	outline: 0;
 	padding: 3%;
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 5px #64636c;
+	-moz-box-shadow: 2px 2px 5px #64636c;
+	box-shadow: 2px 2px 5px #64636c;
+	color: #ffffff;
+	background: #2c292c;
 }
 
 .but2a {
-	background-color: #d5c7aa;
 	border: none;
 	text-align: center;
 	text-decoration: none;
@@ -94,10 +103,17 @@ button {
 	animation-duration: 1s;
 	position: relative;
 	outline: 0;
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 5px #64636c;
+	-moz-box-shadow: 2px 2px 5px #64636c;
+	box-shadow: 2px 2px 5px #64636c;
+	color: #ffffff;
+	background: #2c292c;
 }
 
 .but2b {
-	background-color: #d5c7aa;
 	border: none;
 	text-align: center;
 	text-decoration: none;
@@ -109,30 +125,63 @@ button {
 	animation-duration: 1s;
 	position: relative;
 	outline: 0;
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 5px #64636c;
+	-moz-box-shadow: 2px 2px 5px #64636c;
+	box-shadow: 2px 2px 5px #64636c;
+	color: #ffffff;
+	background: #2c292c;
 }
 
 
 img {
-	height: 25%;
-	width: 85%;
-	margin: 3% auto 0%;
+	width: 80vw;
+	margin: 2% auto;
+	display: block;
+}
+
+.logo_bot {
+	width: 70vw;
+	margin: 7% auto 0;
 	display: block;
 }
 
 .comm {
-	width: 20%;
+	width: 15%;
 	display: inline-block;
-	margin: 1% 4%;
+	margin: 5% 1%;
 }
 
 .niezbednik {
+	margin: auto;
+	display: block;
+	width: 92vw;
+	height: 87vh;
+}
+
+.mapa {
 	width: 99%;
 	margin: auto;
 	display: block;
+	z-index: 0;
+}
+
+#tlo_mapa {
+	width: 94%;
+	animation-name: tlo;
+	animation-duration: 1s;
+	position: relative;
+	margin: 1% auto;
+	border: none;
+	padding: 2% 2%;
+	font-size: 4vw;
+	background: rgba(200, 200, 200, 0.1);
+	z-index: 0;
 }
 
 #tlo {
-	background-color: white;
 	width: 90%;
 	animation-name: tlo;
 	animation-duration: 1s;
@@ -141,10 +190,10 @@ img {
 	border: none;
 	padding: 2% 2%;
 	font-size: 4vw;
+	background: rgba(200, 200, 200, 0.1);
 }
 
 #tlo2 {
-	background-color: white;
 	width: 90%;
 	animation-name: tlo2;
 	animation-duration: 1s;
@@ -153,6 +202,7 @@ img {
 	border: none;
 	padding: 2% 2%;
 	font-size: 4vw;
+	background: rgba(200, 200, 200, 0.1);
 }
 
 #fb {
@@ -197,3 +247,50 @@ img {
 .textGreen {
 	color: #ba2b1b;
 }
+
+.dropbtn {
+	border: none;
+	padding: 4%;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	font-size: 5vw;
+	margin: 1%;
+	font-family: Tahoma;
+	width: 44%;
+	outline: 0;
+	position: absolute;
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 5px #64636c;
+	-moz-box-shadow: 2px 2px 5px #64636c;
+	box-shadow: 2px 2px 5px #64636c;
+	color: #ffffff;
+	background: #2c292c;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+	position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+	text-align: left;
+}
+
+.dropdown-content span {
+    color: #ba742e;
+    padding: 5% 5%;
+    display: block;
+	line-height: 1.6;
+	letter-spacing: 1vw;
+}
+
+.dropdown span:hover {background-color: white;}
+
+.show {display: block;}
