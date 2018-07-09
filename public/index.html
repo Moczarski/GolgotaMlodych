@@ -25,6 +25,7 @@
 			  });
 
 			function weather(){
+					delete js,fjs;
 				!function(d,s,id){
 						var js,fjs=d.getElementsByTagName(s)[0];
 						if(!d.getElementById(id)){js=d.createElement(s);
@@ -38,7 +39,8 @@
 				(function(d, s, id) {
 				  var js, fjs = d.getElementsByTagName(s)[0];
 				  if (d.getElementById(id)) return;
-				  js = d.createElement(s); js.id = id;
+				  js = d.createElement(s); 
+				  js.id = id;
 				  js.src = 'https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.12';
 				  fjs.parentNode.insertBefore(js, fjs);
 				}(document, 'script', 'facebook-jssdk'));
@@ -67,7 +69,7 @@
 				document.getElementById('main').innerHTML = glowna;
 			}
 			
-			function aktualnosci() {			
+			function aktualnosci() {
 				var aktualnosci =
 				'<div id="fb-root"></div>'+
 				'<div id="fb">'+
