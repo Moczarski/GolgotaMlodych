@@ -1,0 +1,18 @@
+[debug] [2018-07-09T12:21:21.333Z] ----------------------------------------------------------------------
+[debug] [2018-07-09T12:21:21.333Z] Command:       E:\Program Files\nodejs\node.exe C:\Users\mocza\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-07-09T12:21:21.333Z] CLI Version:   3.17.4
+[debug] [2018-07-09T12:21:21.333Z] Platform:      win32
+[debug] [2018-07-09T12:21:21.333Z] Node Version:  v8.9.4
+[debug] [2018-07-09T12:21:21.333Z] Time:          Mon Jul 09 2018 14:21:21 GMT+0200 (Środkowoeuropejski czas letni)
+[debug] [2018-07-09T12:21:21.333Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-09T12:21:21.349Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-09T12:21:21.349Z] > authorizing via signed-in user
+[debug] [2018-07-09T12:21:21.349Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/gm-ofmcap  
+  
+ Mon Jul 09 2018 14:21:21 GMT+0200 (Środkowoeuropejski czas letni)
+[debug] [2018-07-09T12:21:22.099Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-09T12:21:22.099Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/gm-ofmcap/tokens  
+  
+ Mon Jul 09 2018 14:21:22 GMT+0200 (Środkowoeuropejski czas letni)
+[debug] [2018-07-09T12:21:22.770Z] <<< HTTP RESPONSE 200
