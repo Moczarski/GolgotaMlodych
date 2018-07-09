@@ -26,12 +26,11 @@
 
 			function weather(){
 				!function(d,s,id){
-					var js,fjs=d.getElementsByTagName(s)[0];
-						if(!d.getElementById(id)){
-							js=d.createElement(s);
-							js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
-							fjs.parentNode.insertBefore(js,fjs);
-						}
+						var js,fjs=d.getElementsByTagName(s)[0];
+						if(!d.getElementById(id)){js=d.createElement(s);
+						js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+						fjs.parentNode.insertBefore(js,fjs);
+					}
 				}(document,'script','weatherwidget-io-js');
 			}
 			
@@ -229,7 +228,7 @@
 				var pogoda =
 				'<div class="tlo">'+
 				
-					'<a class="weatherwidget-io" href="https://forecast7.com/pl/52d2823d05/serpelice/" data-label_1="SERPELICE" data-label_2="Golgota Młodych" data-icons="Climacons" data-theme="desert" data-basecolor="#d5c7aa" data-textcolor="#000000" data-highcolor="#ba2b1b" data-lowcolor="#3d6e8e" data-suncolor="#ba742e" data-raincolor="#3d6e8e" >SERPELICE Golgota Młodych</a>'+
+					'<a class="weatherwidget-io" href="https://forecast7.com/pl/52d2823d05/serpelice/" data-label_1="SERPELICE" data-label_2="Golgota Młodych" data-theme="pure" >SERPELICE Golgota Młodych</a>'+
 					
 				'</div>'+
 				
