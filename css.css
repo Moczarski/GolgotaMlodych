@@ -26,7 +26,6 @@ body {
 	width: inherit;
 	height: inherit;
 	z-index: 0;
-	background-image: url('img/back.png');
 	background-size: 100vh;
 	animation-name: przejscie;
 	animation-duration: 2s;

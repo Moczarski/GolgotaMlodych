@@ -32,23 +32,12 @@
 				}(document,'script','weatherwidget-io-js');
 			}
 			
-			function fb() {
-				(function(d, s, id) {
-				  var js, fjs = d.getElementsByTagName(s)[0];
-				  if (d.getElementById(id)) return;
-				  js = d.createElement(s); 
-				  js.id = id;
-				  js.src = 'https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.12';
-				  fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));
-			}
-			
 			function wroc(){
 				const glowna =
 				
 				'<img src="img/logo.png" /><br />'+
 				
-				'<button onclick="aktualnosci();">AKTUALNOŚCI</button>'+
+				'<a href="https://www.facebook.com/pg/golgotamlodychpl/posts/?ref=page_internal" data-applink="facebook://golgotamlodychpl"><button>AKTUALNOŚCI</button></a>'+
 				'<button onclick="mapa();">MAPA</button><br />'+
 				'<button onclick="pogoda();">POGODA</button>'+
 				'<button onclick="plan();">PLAN</button></a><br />'+
@@ -64,20 +53,6 @@
 				'<a onclick="window.open(\'https://www.youtube.com/user/GolgotaMlodych/\');"><img class="comm" src="img/youtube.png" /></a>';
 				
 				document.getElementById('main').innerHTML = glowna;
-			}
-			
-			function aktualnosci() {
-				var aktualnosci =
-				'<div id="fb-root"></div>'+
-				'<div id="fb">'+
-					'<div class="fb-page" data-href="https://www.facebook.com/golgotamlodychpl" data-tabs="timeline, events, messages" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/golgotamlodychpl" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/golgotamlodychpl">Golgota Młodych</a></blockquote></div>'+
-				'</div>'+
-				
-				'<button class="but2" onclick="wroc();">WRÓĆ</button>';
-				
-				document.getElementById('main').innerHTML = aktualnosci;
-				
-				fb();
 			}
 			
 			function info(){
@@ -316,7 +291,7 @@
 			<div id="main">
 				
 				<img src="img/logo.png" alt="GOLGOTA MŁODYCH - błąd logo"/><br />
-				<button onclick="aktualnosci();">AKTUALNOŚCI</button>
+				<a href="https://www.facebook.com/pg/golgotamlodychpl/posts/?ref=page_internal" data-applink="facebook://golgotamlodychpl"><button>AKTUALNOŚCI</button></a>
 				<button onclick="mapa();">MAPA</button><br />
 				<button onclick="pogoda();">POGODA</button>
 				<button onclick="plan();">PLAN</button><br />
