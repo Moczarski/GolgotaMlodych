@@ -2,6 +2,7 @@
 	"gcm_sender_id": "482941778795",
 	"gcm_sender_id_comment": "Nie zmieniaj GCM Sender ID",
 	"name": "Golgota Młodych",
+	"theme-color": "white",
 	"icons": [
 		{
 		"src": "icon.png",
